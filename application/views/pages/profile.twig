@@ -14,7 +14,7 @@
 {% block main_content %}
 <p class="input_p">
 {% if form_status == 'ok' %}
-<div class="shj_ok">Profile updated successfully.</div>
+<div class="shj_ok">Profil updatat cu succes.</div>
 {% elseif form_status == 'error' %}
 	<div class="shj_error">Error updating profile.</div>
 {% endif %}
@@ -27,7 +27,7 @@
 	<input id="form_username" type="text" name="username" class="sharif_input medium" value="{{ edit_username }}"  disabled/>
 </p>
 <p class="input_p clear">
-	<label for="form_name" class="short2">Name:</label>
+	<label for="form_name" class="short2">Nume:</label>
 	<input id="form_name" type="text" name="display_name" class="sharif_input medium" value="{{ display_name }}"/>
 	{{ form_error('display_name', '<div class="shj_error">', '</div>') }}
 </p>
@@ -37,14 +37,14 @@
 	{{ form_error('email', '<div class="shj_error">', '</div>') }}
 </p>
 <p class="input_p clear">
-	<label for="form_password" class="short2">Password:<br>
-		<span class="form_comment">If you don't want to change password, leave this blank.</span>
+	<label for="form_password" class="short2">Parola:<br>
+		<span class="form_comment">Daca nu vrei sa schimbi parola, nu scrie nimic.</span>
 	</label>
 	<input id="form_password" type="password" name="password" class="sharif_input medium"/>
 	{{ form_error('password', '<br><span class="shj_error">', '</span>') }}
 </p>
 <p class="input_p clear">
-	<label for="form_password_2" class="short2">Password, Again:</label>
+	<label for="form_password_2" class="short2">Parola, din nou:</label>
 	<input id="form_password_2" type="password" name="password_again" class="sharif_input medium"/>
 	{{ form_error('password_again', '<div class="shj_error">', '</div>') }}
 </p>

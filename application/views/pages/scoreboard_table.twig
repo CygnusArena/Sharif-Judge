@@ -10,7 +10,7 @@
 	<tr>
 		<th>#</th>
 		<th>Username</th>
-		<th>Name</th>
+		<th>Nume</th>
 		{% for problem in problems %}
 			<th>
 				<a dir="auto" href="{{ site_url("problems/#{assignment_id}/#{problem.id}") }}">{{ problem.name }}</a><br>
@@ -33,7 +33,7 @@
 	<td>
 		{% if scores[sc_username][problem.id].score is defined %}
 			{{ scores[sc_username][problem.id].score }}<br>
-			<span class="tiny_text" title="Time">{{ time_hhmm(scores[sc_username][problem.id].time) }}</span>
+			<span class="tiny_text" title="Timp">{{ time_hhmm(scores[sc_username][problem.id].time) }}</span>
 		{% else %}
 			-
 		{% endif %}
@@ -42,7 +42,7 @@
 	<td>
 	<span style="font-weight: bold;">{{ scoreboard['score'][loop.index0] }}</span>
 	<br>
-	<span class="tiny_text" title="Total Time + Submit Penalty">{{ time_hhmm(scoreboard['submit_penalty'][loop.index0]) }}</span>
+	<span class="tiny_text" title="Timp Total + Submit Penalty">{{ time_hhmm(scoreboard['submit_penalty'][loop.index0]) }}</span>
 	</td>
 	</tr>
 {% endfor %}

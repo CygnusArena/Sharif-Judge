@@ -54,7 +54,7 @@
 	<td>{{ item.total_submits }} submission{{ item.total_submits != 1 ? 's' }}</td>
 	<td>
 		{% if item.finished %}
-			<span style="color: red;">Finished</span>
+			<span style="color: red;">Terminat</span>
 		{% else %}
 			{{ item.coefficient }} %
 		{% endif %}
@@ -63,9 +63,9 @@
 	<td>{{ item.finish_time }}</td>
 	<td>
 		{% if item.open %}
-			<span style="color: green;">Open</span>
+			<span style="color: green;">Deschis</span>
 		{% else %}
-			<span style="color: red;">Close</span>
+			<span style="color: red;">Inchis</span>
 		{% endif %}
 	</td>
 	<td>

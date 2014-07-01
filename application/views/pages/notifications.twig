@@ -6,8 +6,8 @@
 {% set selected = 'notifications' %}
 {% extends 'templates/base.twig' %}
 {% block icon %}fa-bell{% endblock %}
-{% block title %}Notifications{% endblock %}
-{% block head_title %}Notifications{% endblock %}
+{% block title %}Notificări{% endblock %}
+{% block head_title %}Notificări{% endblock %}
 
 
 
@@ -21,7 +21,7 @@
 
 {% block main_content %}
 {% if notifications|length == 0 %}
-<p style="text-align: center;">Nothing yet...</p>
+<p style="text-align: center;">Nimic înca...</p>
 {% endif %}
 {% for notification in notifications %}
 	<div class="notif" id="number{{ notification.id }}" data-id="{{ notification.id }}">

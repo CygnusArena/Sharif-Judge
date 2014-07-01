@@ -39,7 +39,7 @@
 	<p>Coefficient: {{ coefficient }}%</p>
 	{{ form_open_multipart('submit') }}
 	<p class="input_p">
-		<label for="problems" class="tiny">Problem:</label>
+		<label for="problems" class="tiny">Problema:</label>
 		<select id="problems" name ="problem" class="sharif_input">
 			<option value="0" selected="selected">-- Select Problem --</option>
 			{% for problem in problems %}
@@ -49,9 +49,9 @@
 		{{ form_error('problem','<div class="shj_error">','</div>') }}
 	</p>
 	<p class="input_p">
-		<label for="languages" class="tiny">Language:</label>
+		<label for="languages" class="tiny">Limbaj de programare:</label>
 		<select id="languages" name="language" class="sharif_input">
-			<option value="0" selected="selected">-- Select Language --</option>
+			<option value="0" selected="selected">-- Selecteaza Limbaj --</option>
 		</select>
 		{{ form_error('language','<div class="shj_error">','</div>') }}
 	</p>
@@ -59,9 +59,9 @@
 		<label for="file" class="tiny">File:</label>
 		<input type="file" id="file" class="sharif_input medium" name="userfile" />
 		{% if upload_state == 'error' %}
-		<div class="shj_error">Error uploading file.</div>
+		<div class="shj_error">Fisierul nu a fost incarcat. Mai incearca odata.</div>
 		{% elseif upload_state == 'ok' %}
-		<div class="shj_ok">File uploaded successfully. See the result in 'All Submissions'.</div>
+		<div class="shj_ok">Fisierul a fost incarcat. Vezi rezultatul la 'Rezultate'.</div>
 		{% endif %}
 	</p>
 	<p class="input_p">

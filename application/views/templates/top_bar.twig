@@ -11,7 +11,7 @@
 			<div class="name"><i class="fa fa-user"></i> {{ user.username }}</div>
 			<div class="menu-controls">
 				<a href="{{ site_url('logout') }}" class="logout-btn"><i class="fa fa-sign-out"></i> Sign Out</a>
-				<a href="{{ site_url('profile') }}" class="profile-btn"><i class="fa fa-wrench"></i> Profile</a>
+				<a href="{{ site_url('profile') }}" class="profile-btn"><i class="fa fa-wrench"></i> Profil</a>
 			</div>
 		</div>
 	</div>
@@ -36,22 +36,22 @@
 	<div class="top_object countdown" id="extra_time">
 		<i class="fa fa-plus-square fa-2x"></i>
 		<div class="time_block">
-			<span>Extra</span><br><span>Time</span>
+			<span>Timp</span><br><span>Extra</span>
 		</div>
 	</div>
 	<div id="shj_logo" class="top_left">
 		<a href="{{ site_url('/') }}">
 			<img src="{{ base_url('assets/images/paperplane.svg') }}"/>
-			<h1 class="shjlogo-text">Sharif <span>Judge</span></h1>
+			<h1 class="shjlogo-text">Cygnus <span>Computer</span></h1>
 		</a>
 	</div>
 	{%  if user.level >= 2 %}
 	<div class="top_object shj_menu top_left" id="admin_tools_top">
 		Tools
 		<ul class="top_menu">
-			<li><a href="{{ site_url('rejudge') }}">Rejudge</a></li>
-			<li><a href="{{ site_url('queue') }}">Submission Queue</a></li>
-			<li><a href="{{ site_url('moss/'~user.selected_assignment['id']) }}">Cheat Detection</a></li>
+			<li><a href="{{ site_url('rejudge') }}">Rejurizati</a></li>
+			<li><a href="{{ site_url('queue') }}">Lista de asteptare a evaluatorului</a></li>
+			<li><a href="{{ site_url('moss/'~user.selected_assignment['id']) }}">Detectarea plagiatului</a></li>
 		</ul>
 	</div>
 	{% endif %}
@@ -65,7 +65,7 @@
 				</li>
 			{% endfor %}
 			<li>
-			<a href="{{ site_url('assignments') }}">All Assignments</a>
+			<a href="{{ site_url('assignments') }}">Toate temele</a>
 			</li>
 		</ul>
 	</div>
